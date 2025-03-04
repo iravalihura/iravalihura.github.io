@@ -1,0 +1,42 @@
+body.home .mini-card {
+  min-width: 300px;
+  min-height: 300px;
+  box-shadow: -2rem 0 3rem -2rem #000;
+}
+.mini-card {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(85deg,#434343,#262626);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: .2s;
+  margin: 0;
+}
+.ais-hits--item, .module {
+  clear: both;
+  margin: 0 0 1rem;
+  position: relative;
+}
+.mini-card {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(85deg, #434343, #262626);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  margin: 0;
+  min-width: 300px;
+  min-height: 350px;
+  box-shadow: -2rem 0 3rem -2rem black;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+body.home .mini-card-grid {
+  scrollbar-color: #666 #201c29;
+}
