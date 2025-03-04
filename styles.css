@@ -125,7 +125,7 @@ img {
 }
 .SidebarCreate-module_anonButton-5yd5b {
   margin: 0 auto;
-  width: calc(100% - 2.75rem);
+  width: 200px;
   text-align: center;
   position: relative;
   border-radius: 6px;
@@ -163,6 +163,10 @@ img {
   justify-content: center;
   box-sizing: border-box;
   height: 100%;
+}
+.SidebarCreate-module_anonButton-5yd5b {
+  text-align: center;
+  color: var(--cp-color-1);
 }
 .article-tile {
   border: 1px solid var(--border-primary);
