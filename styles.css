@@ -123,7 +123,7 @@ img {
 .author-row > div > * {
   white-space: nowrap;
 }
-.SidebarCreate-module_root-uXkQg .SidebarCreate-module_anonButton-5yd5b {
+.SidebarCreate-module_anonButton-5yd5b {
   margin: 0 auto;
   width: calc(100% - 2.75rem);
   text-align: center;
@@ -136,7 +136,7 @@ img {
   overflow: hidden;
   padding: 3px;
 }
-.SidebarCreate-module_root-uXkQg .SidebarCreate-module_anonButton-5yd5b::before {
+.SidebarCreate-module_anonButton-5yd5b::before {
   content: "";
   position: absolute;
   top: 0;
@@ -147,11 +147,11 @@ img {
     background-size: auto;
   background-size: 50% 100%;
 }
-.SidebarCreate-module_root-uXkQg .SidebarCreate-module_anonButton-5yd5b {
+.SidebarCreate-module_anonButton-5yd5b {
   text-align: center;
   color: var(--cp-color-1);
 }
-.SidebarCreate-module_root-uXkQg .SidebarCreate-module_anonButton-5yd5b span {
+.SidebarCreate-module_anonButton-5yd5b span {
   position: relative;
   z-index: 2;
   padding: .875rem 0;
@@ -164,18 +164,18 @@ img {
   box-sizing: border-box;
   height: 100%;
 }
-featured-articles .article-tile {
+.article-tile {
   border: 1px solid var(--border-primary);
   border-radius: .5rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
-.featured-articles .article-tile .tile-tag {
+.article-tile .tile-tag {
   color: var(--text-primary);
   font-weight: 500;
 }
-.featured-articles .article-tile .tile-title {
+.article-tile .tile-title {
   align-items: flex-start;
   display: flex;
   flex-grow: 1;
@@ -184,10 +184,10 @@ featured-articles .article-tile {
   line-height: var(--intermediate-line-height);
   margin: 0 0 1rem;
 }
-.featured-articles .article-tile .tile-title a {
+.article-tile .tile-title a {
   color: var(--text-primary);
 }
-.featured-articles .article-tile p {
+.article-tile p {
   font: var(--type-smaller-font-size);
   line-height: var(--base-line-height);
   margin: 0;
@@ -195,7 +195,7 @@ featured-articles .article-tile {
   overflow: hidden;
   position: relative;
 }
-.featured-articles .article-tile p::after {
+.article-tile p::after {
   background: var(--background-primary);
   content: "";
   display: block;
