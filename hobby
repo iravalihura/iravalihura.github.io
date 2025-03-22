@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій персональний сайт</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img src="img/my-photo.webp" alt="Ваше Фото" class="person__logo">
+            <div class="header-wrapper">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <div class="header__info-top">
+                            <div class="university__info">
+                                <p class="university__name">Тернопільський національний технічний університет ім. Івана Пулюя</p>
+                                <p>Факультет ФІС</p>
+                                <p>Кафедра комп’ютерних наук</p>
+                            </div>
+                            <div class="header__logos">
+                                <a href="#" class="tntu-logo header__logo">
+                                    <svg width="60" height="60" viewBox="0 0 324 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M211.5 130L164 80.9999H20.5C20.5 80.9999 17.0001 80.9999 15 83C12.9999 85.0001 12.5 88 12.5 88C8.2469 116.581 5.02335 134.603 0.5 165H130.5L154.5 192.5L104.5 243.5H169.5L324 80.9999H261L211.5 130Z" fill="#405D72"/>
+                                        <path d="M22.5 93L20.5 106.5H34.5L28.5 149.5H43L48.5 106.5H63L64.5 93H22.5Z" fill="white"/>
+                                        <path d="M82.5 92.5H69L59.5 149.5H74.5L77 131H92L89.5 149.5H104L112 92.5H98L94.5 116.5H79.5L82.5 92.5Z" fill="white"/>
+                                        <path d="M113.5 106.5L115.5 92.5H158.5L157 106.5H142.5L135.5 149.5H120.5L127 106.5H113.5Z" fill="white"/>
+                                        <path d="M161 274C236.663 274 298 212.663 298 137C298 133.807 297.715 129.639 297.5 126.5L287 137C286.463 206.128 230.254 263 161 263C105.58 263 58.5167 227.22 41.6502 177.5H30.085C47.3561 233.392 99.4358 274 161 274Z" fill="#405D72"/>
+                                        <path d="M279.5 69C255.812 28.0506 211.709 0 161 0C111.749 0 68.5684 25.9885 44.423 65C44.1122 65.5022 42.3045 68.9935 42 69.5H54.5C54.5 69.5 56.1063 67.1664 56.2177 67C78.821 33.2324 117.314 11 161 11C205.543 11 244.687 34.113 267.094 69H279.5Z" fill="#405D72"/>
+                                    </svg>
+                                </a>
+                                <img src="img/fis-logo.jpg" alt="Логотип ФІС" class="fis-logo header__logo">
+                            </div>
+                        </div>
+                        <div class="header__info-bottom">
+                            <div class="header__personal-info">
+                                <h2>Персональна сторінка</h2>
+                                <p>Валігура Ірина Володимирівна</p>
+                                <p>Група СП-31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__kn-logo">
+                        <img src="img/kn-logo.png" alt="Логотип КН" class="kn-logo">
+                    </div> 
+                </div> 
+                <div class="header__menu">
+                    <nav>
+                        <ul class="menu__list">
+                            <li><a href="index.html">Головна</a></li>
+                            <li><a href="bio.html">Біографія</a></li>
+                            <li><a href="group.html">Група</a></li>
+                            <li><a href="hobby.html">Хоббі</a>
+                            <li><a href="interest.html">Цікаве</a>
+                        </ul>
+                    </nav>
+                </div>        
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main__container">
+            <h1 class="main__title">Хоббі</h1>
+            <div class="main__content">
+                <div class="hobby__inner">
+                    <div class="hobby__paragraph">
+                        <img src="img/h1.jpg" alt="Моє Фото" class="bio__img">
+                        <div class="bio__info">
+                            <p class="bio__text">Хобі відіграє важливу роль у житті кожної людини, адже це не просто спосіб провести вільний час, а можливість розкрити власний потенціал, знайти гармонію та натхнення. Для одних хобі стає джерелом радості та задоволення, для інших – способом самовираження або навіть шляхом до професійного розвитку. Хтось знаходить натхнення в мистецтві – малює, пише музику, створює фото або займається рукоділлям. Інші віддають перевагу активним видам дозвілля, таким як спорт, танці чи подорожі. Незалежно від вибору, хобі допомагає відволіктися від рутини та зарядитися енергією для нових звершень.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hobby__paragraph">
+                        <div class="bio__info">
+                            <p>Одним із найцінніших аспектів хобі є його вплив на особистісний розвиток. Регулярне заняття улюбленою справою розвиває терпіння, дисципліну та креативність. Наприклад, люди, які займаються музикою чи малюванням, покращують свою концентрацію та дрібну моторику, тоді як любителі спорту стають витривалішими й дисциплінованішими. Крім того, багато хобі вчать комунікації та командній роботі. Наприклад, участь у театральних гуртках, танцювальних колективах чи спортивних командах сприяє розвитку соціальних навичок та взаєморозуміння. Це допомагає не лише у творчості, а й у повсякденному житті та професійній діяльності.                                .
+                            </p>
+                        </div>
+                        <img src="img/h2.jpg" alt="Моє Фото" class="bio__img">
+                    </div>
+                    <div class="hobby__paragraph">
+                        <img src="img/h3.jpg" alt="Моє Фото" class="bio__img">
+                        <div class="bio__info">
+                            <p>Хобі також може стати чудовою можливістю для знайомств і розширення кола спілкування. Люди, які поділяють однакові інтереси, часто знаходять спільну мову швидше та будують міцні дружні стосунки. Наприклад, книголюби можуть обговорювати улюблені романи, мандрівники ділитися враженнями про подорожі, а спортсмени – разом тренуватися та мотивувати одне одного. Деякі захоплення навіть можуть перерости у професійну діяльність, відкриваючи нові кар’єрні перспективи. Саме тому так важливо знаходити час для того, що приносить справжнє задоволення і робить життя цікавішим та наповненим.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="add">
+                    Реклама
+                </aside>
+                <div class="bottom-add">
+                    <div class="bottom-add__blocks">
+                        <div class="bottom-add__block">
+                            Реклама 1
+                        </div>
+                        <div class="bottom-add__block">
+                            Реклама 2
+                        </div>
+                        <div class="bottom-add__block">
+                            Реклама 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__wrapper">
+                <p>IVI &copy; 2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
