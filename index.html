@@ -1,62 +1,145 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8">
-        <title>My site</title> 
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-<article class="article-card " id="post-384906">
 
-  <div class="article-thumbnail-wrap">
-    
-      
-      <a href="https://css-tricks.com/a-css-only-star-rating-component-and-more-part-1/">
-        <img loading="lazy" width="1200" height="600" src="https://css-tricks.com/wp-content/uploads/2019/07/star-pattern.png" class="article-thumbnail wp-post-image" alt="Profile picture of Temani Afif" decoding="async" srcset="https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/07/star-pattern.png?w=1200&amp;ssl=1 1200w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/07/star-pattern.png?resize=300%2C150&amp;ssl=1 300w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/07/star-pattern.png?resize=1024%2C512&amp;ssl=1 1024w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/07/star-pattern.png?resize=768%2C384&amp;ssl=1 768w, https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/07/star-pattern.png?resize=1000%2C500&amp;ssl=1 1000w" sizes="(min-width: 735px) 864px, 96vw">        <div class="screen-reader-text">Direct link to the article A CSS-Only Star Rating Component and More! (Part 1)</div>
-      </a>
-  </div>
-  
-  <div class="article-article">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій персональний сайт</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <header class="article-publication-meta">
-
-        <div class="tags">
-    <a href="https://css-tricks.com/tag/attributes/" rel="tag">attributes</a> <a href="https://css-tricks.com/tag/borders/" rel="tag">borders</a> <a href="https://css-tricks.com/tag/forms/" rel="tag">forms</a>  </div>
-
-      
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img src="img/my-photo.webp" alt="Ваше Фото" class="person__logo">
+            <div class="header-wrapper">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <div class="header__info-top">
+                            <div class="university__info">
+                                <p class="university__name">Тернопільський національний технічний університет ім. Івана Пулюя</p>
+                                <p>Факультет ФІС</p>
+                                <p>Кафедра комп’ютерних наук</p>
+                            </div>
+                            <div class="header__logos">
+                                <a href="#" class="tntu-logo header__logo">
+                                    <svg width="60" height="60" viewBox="0 0 324 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M211.5 130L164 80.9999H20.5C20.5 80.9999 17.0001 80.9999 15 83C12.9999 85.0001 12.5 88 12.5 88C8.2469 116.581 5.02335 134.603 0.5 165H130.5L154.5 192.5L104.5 243.5H169.5L324 80.9999H261L211.5 130Z" fill="#405D72"/>
+                                        <path d="M22.5 93L20.5 106.5H34.5L28.5 149.5H43L48.5 106.5H63L64.5 93H22.5Z" fill="white"/>
+                                        <path d="M82.5 92.5H69L59.5 149.5H74.5L77 131H92L89.5 149.5H104L112 92.5H98L94.5 116.5H79.5L82.5 92.5Z" fill="white"/>
+                                        <path d="M113.5 106.5L115.5 92.5H158.5L157 106.5H142.5L135.5 149.5H120.5L127 106.5H113.5Z" fill="white"/>
+                                        <path d="M161 274C236.663 274 298 212.663 298 137C298 133.807 297.715 129.639 297.5 126.5L287 137C286.463 206.128 230.254 263 161 263C105.58 263 58.5167 227.22 41.6502 177.5H30.085C47.3561 233.392 99.4358 274 161 274Z" fill="#405D72"/>
+                                        <path d="M279.5 69C255.812 28.0506 211.709 0 161 0C111.749 0 68.5684 25.9885 44.423 65C44.1122 65.5022 42.3045 68.9935 42 69.5H54.5C54.5 69.5 56.1063 67.1664 56.2177 67C78.821 33.2324 117.314 11 161 11C205.543 11 244.687 34.113 267.094 69H279.5Z" fill="#405D72"/>
+                                    </svg>
+                                </a>
+                                <img src="img/fis-logo.jpg" alt="Логотип ФІС" class="fis-logo header__logo">
+                            </div>
+                        </div>
+                        <div class="header__info-bottom">
+                            <div class="header__personal-info">
+                                <h2>Персональна сторінка</h2>
+                                <p>Валігура Ірина Володимирівна</p>
+                                <p>Група СП-31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__kn-logo">
+                        <img src="img/kn-logo.png" alt="Логотип КН" class="kn-logo">
+                    </div> 
+                </div> 
+                <div class="header__menu">
+                    <nav>
+                        <ul class="menu__list">
+                            <li><a href="l4.html">Головна</a></li>
+                            <li><a href="bio.html">Біографія</a></li>
+                            <li><a href="group.html">Група</a></li>
+                            <li><a href="hobby.html">Хоббі</a>
+                            <li><a href="interest.html">Цікаве</a>
+                        </ul>
+                    </nav>
+                </div>        
+            </div>
+        </div>
     </header>
-
-        <h2>
-          <a href="https://css-tricks.com/a-css-only-star-rating-component-and-more-part-1/">
-        A CSS-Only Star Rating Component and More! (Part 1)      </a>
-        </h2>
-    
-    
-    <div class="card-content">
-      <p>In this article, you’ll learn how to make a full-on star rating component out of nothing but a single input element and vanilla CSS.</p>
-    </div>
-
-    <div class="author-row">
-
-    
-          <img loading="lazy" style="border-radius: 50%;" src="https://secure.gravatar.com/avatar/2c12e74c8162614e08a31d704ed9e193?s=80&amp;d=retro&amp;r=pg" alt="Profile picture of Temani Afif">
-    
-    <div>
-      
-              
-        <a class="author-name" href="https://css-tricks.com/author/afiftemani/">
-          Temani Afif        </a>
-      
-        on
-      
-              <time datetime="2025-02-28">
-          Feb 28, 2025        </time>
-      
-    </div>
-</div>
-  </div>
-</article>
-        <a href="/pen/" class="SidebarCreate-module_anonButton-5yd5b"><span>Start Coding</span></a>
-        <div class="article-tile"><a href="/en-US/blog/" class="tile-tag" data-glean="homepage: article_tag 1">Blog</a><h3 class="tile-title"><a href="/en-US/blog/mdn-scrimba-partnership/" data-glean="homepage: article 1">MDN partners with Scrimba to enhance web development learning</a></h3><p>We have chosen Scrimba as a course partner for the MDN Curriculum. This blog post explores what the partnership means practically, and how we will provide an even better web education experience together.</p></div>
-    </body>
+    <main>
+        <section class="main__container">
+            <h1 class="main__title">Головна</h1>
+            <div class="main__content">
+                <div class="main__sections">
+                    <section class="main__section">
+                        <div class="section__info">
+                            <h3 class="section__title">Біографія</h3>
+                            <p class="section__disc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <button  class="section__btn section__btn button-19">
+                            <a href="bio.html" class="button">Детальніше >></a>
+                        </button>
+                    </section>
+                    
+                    <section class="main__section">
+                        <div class="section__info">
+                            <h3 class="section__title">Група</h3>
+                            <p class="section__disc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <button  class="section__btn section__btn button-19">
+                            <a href="group.html" class="button">Детальніше >></a>
+                        </button>
+                    </section>
+                    
+                    <section class="main__section">
+                        <div class="section__info">
+                            <h3 class="section__title">Хоббі</h3>
+                            <p class="section__disc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <button  class="section__btn section__btn button-19">
+                            <a href="hobby.html" class="button">Детальніше >></a>
+                        </button>
+                    </section>
+                    
+                    <section class="main__section">
+                        <div class="section__info">
+                            <h3 class="section__title">Цікаве</h3>
+                            <p class="section__disc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <button  class="section__btn section__btn button-19">
+                            <a href="interest.html" class="button">Детальніше >></a>
+                        </button>
+                    </section>        
+                </div>
+                <aside class="add">
+                    Реклама
+                </aside>
+                <div class="bottom-add">
+                    <div class="bottom-add__blocks">
+                        <div class="bottom-add__block">
+                            Реклама 1
+                        </div>
+                        <div class="bottom-add__block">
+                            Реклама 2
+                        </div>
+                        <div class="bottom-add__block">
+                            Реклама 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__wrapper">
+                <p>IVI &copy; 2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
