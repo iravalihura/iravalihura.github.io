@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    min-width: 420px
+}	
+body {
+    font-family: 'Manrope', sans-serif;
+}
+ul li {
+    list-style: none;
+}
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: uppercase;
+    color:#0f0047;
+}
+h3 {
+    font-size: 24px;
+    color:#470047;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+[class*=__container] {
+    max-width: 84.0625rem;
+    margin: 0 auto;
+    padding: 0 .9375rem
+}
+
+.header {
+    width: 100%;
+    height: 225px;
+    box-shadow: 0 4px 25px -8px rgba(0, 0, 0, .41);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+.person__logo {
+    width: 130px;
+}
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-left: 55px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #AFAFAF;
+    width: 100%;
+}
+
+.header__info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    word-spacing: 1.6px;
+}
+.university__info {
+    font-size: 14px;
+}
+.university__name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header__personal-info {
+    line-height: 1.6;
+    font-size: 14px;
+}
+.header__info-top {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header__kn-logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.header__logos {
+    display: flex;
+    gap: 30px;
+}
+
+.header__logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    text-align: center;
+}
+.kn-logo {
+    width: 130px;
+}
+.header__menu {
+    font-weight: 500;
+}
+.menu__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.footer {
+    width: 100%;
+    background-color: #470047;
+    color: white;
+    font-weight: 700;
+}
+.footer__wrapper {
+    padding-block: 20px;
+    text-align: center;
+}
+.main__container {
+
+    padding-block: 50px;
+}
+.main__content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+.main__title {
+    text-align: center;
+}
+.main__sections {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.main__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.15);    padding-block: 30px;
+    padding-inline: 15px;
+    border-radius: 15px;
+}
+.section__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button-33 {
+    background-color: #8B008A33;
+    border-radius: 100px;
+    box-shadow: rgba(133, 0, 138, .2) 0 -25px 18px -14px inset, rgba(133, 0, 138, .15) 0 1px 2px, rgba(133, 0, 138, .15) 0 2px 4px, rgba(133, 0, 138, .15) 0 4px 8px, rgba(133, 0, 138, .15) 0 8px 16px, rgba(133, 0, 138, .15) 0 16px 32px;
+    color: #470047;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-33:hover {
+    box-shadow: rgba(133, 0, 138, .2) 0 -25px 18px -14px inset, rgba(133, 0, 138, .15) 0 1px 2px, rgba(133, 0, 138, .15) 0 2px 4px, rgba(133, 0, 138, .15) 0 4px 8px, rgba(133, 0, 138, .15) 0 8px 16px, rgba(133, 0, 138, .15) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+  .button-19 {
+    appearance: button;
+    background-color:  #823282;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 180px;
+    height: 70px;
+  }
+  
+  .button-19:after {
+    background-clip: padding-box;
+    background-color: #b95ab9;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button-19,
+  .button-19:focus {
+    user-select: auto;
+  }
+  
+  .button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button-19:disabled {
+    cursor: auto;
+  }
+  
+  .button-19:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
+  .add {
+    border: solid 1px #470047;
+    border-radius: 15px;
+    padding: 15px;
+  }
+  .bottom-add {
+    grid-column: 1 / 3;
+  }
+  .bottom-add__blocks {
+    display: flex;
+    gap: 30px;
+  }
+  .bottom-add__block {
+    width: 100%;
+    padding: 15px;
+    border: solid 1px #470047;
+    border-radius: 15px;
+  }
+  .bio__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .bio__paragraph {
+    display: flex;
+    gap: 30px;
+  }
+  .bio__img {
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+  }
+  .bio__info {
+    font-size: 20px;
+  }
+  .bio__info p::first-letter {
+    font-size: 42px;
+    font-weight: bold;
+    color: #8B008A;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 10px;
+    margin-top: -4px;    
+}
+.hobby__inner {
+    display: flex;
+    gap: 20px;
+}
+.hobby__paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section__btn a {
+    display: flex;
+    padding: 13px 16px;
+    height: 100%;
+    align-items: center;
+}
