@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Tracker Test</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#eeeeee">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <style>
+        body { margin: 0; padding: 0; font-family: sans-serif; }
+        #map { height: 70vh; width: 100%; }
+        .controls { height: 30vh; padding: 15px; background: #eee; overflow-y: auto; }
+        .status { font-weight: bold; color: green; }
+        .info { font-size: 14px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+    
+    <div class="controls">
+        <h3>Моніторинг кур'єра (Тест)</h3>
+        <div id="status">Статус: Очікування дозволу GPS...</div>
+        <div id="coords" class="info">Координати: -</div>
+        <div id="log" class="info" style="color: #666;">Лог переміщень:</div>
+    </div>
+
+    <script>
+        // Ініціалізація карти (початковий вид на центр України)
+        const map = L.map('map').setView([48.3794, 31.1656], 6);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        let marker = null;
+        let path = L.polyline([], {color: 'blue'}).addTo(map); // Лінія маршруту
+
+        // Функція обробки нових координат
+        function updateLocation(position) {
+            const { latitude, longitude, accuracy, speed } = position.coords;
+            const latlng = [latitude, longitude];
+
+            document.getElementById('status').innerHTML = "Статус: <span class='status'>Відстеження активне</span>";
+            document.getElementById('coords').innerHTML = 
+                `Широта: ${latitude.toFixed(6)} <br> Довгота: ${longitude.toFixed(6)} <br> Точність: ${accuracy.toFixed(1)} м.`;
+
+            // Якщо маркер вже є — рухаємо його, якщо ні — створюємо
+            if (!marker) {
+                marker = L.marker(latlng).addTo(map).bindPopup("Я тут").openPopup();
+                map.setView(latlng, 16);
+            } else {
+                marker.setLatLng(latlng);
+            }
+
+            // Додаємо точку до лінії маршруту
+            path.addLatLng(latlng);
+            
+            // Логування
+            const logEntry = document.createElement('div');
+            logEntry.innerText = `${new Date().toLocaleTimeString()} -> ${latitude.toFixed(5)}, ${longitude.toFixed(5)}`;
+            document.getElementById('log').prepend(logEntry);
+        }
+
+        function handleError(error) {
+            let msg = "";
+            switch(error.code) {
+                case error.PERMISSION_DENIED: msg = "Користувач відхилив запит на GPS."; break;
+                case error.POSITION_UNAVAILABLE: msg = "Інформація про місцезнаходження недоступна."; break;
+                case error.TIMEOUT: msg = "Час очікування запиту вичерпано."; break;
+                default: msg = "Сталася невідома помилка."; break;
+            }
+            document.getElementById('status').innerHTML = `<span style="color:red">Помилка: ${msg}</span>`;
+        }
+
+        // Запуск відстеження
+        if ("geolocation" in navigator) {
+            navigator.geolocation.watchPosition(updateLocation, handleError, {
+                enableHighAccuracy: true, // Використовувати саме GPS датчик
+                maximumAge: 0,
+                timeout: 10000
+            });
+        } else {
+            alert("Ваш браузер не підтримує Geolocation API");
+        }
+    </script>
+</body>
+</html>
